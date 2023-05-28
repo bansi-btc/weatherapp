@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="wrapper" class="bg-gradient-to-br from-blue-900 to to-blue-600 h-screen w-screen overflow-x-hidden overflow-y-auto flex flex-col items-center ">
+        <div class="container1 text-white max-w-[800px] mx-auto flex flex-col items-center justify-center space-y-8 mt-[4rem]">
+        <h1 class="text-3xl font-semibold tracking-wide">WEATHER APP</h1>
+
+        <div class="weathers flex flex-row justify-center space-x-[20rem]">
+            <p class="your-wea bg-blue-400 font-semibold px-4 py-1 rounded-md opacity-90">Your Weather</p>
+            <p class="sear-wea bg-transparent font-semibold px-4 py-1 rounded-md opacity-90">Search Weather</p>
+        </div>
+
+        <div class="search-cont w-[99%] flex flex-row items-center justify-center space-x-2 inactive">
+            <input type="text" name="" id="" placeholder="Enter city" class="input-city w-full py-1 px-2 placeholder:text-base placeholder:text-gray-600 text-gray-900 text-base focus:outline-none rounded-sm">
+            <div class="searchbtn">Search</div>
+        </div>
+
+        <div class="loader inactive"><img src="loading.gif" alt="" class="w-20"></div>
+
+
+            <div class="data-cont flex-col items-center justify-center space-y-5 flex">
+        <div class="city text-2xl font-semibold"></div>
+        <div class="weather text-lg font-sans"></div>
+        <!-- <div class="weather">Img</div> -->
+        <div class="temp text-3xl font-bold"></div>
+
+        <div class="boxes flex flex-row items-center justify-center space-x-[3rem] ">
+            <div class="wind h-[120px] w-[150px] flex flex-col items-center justify-between bg-[#0d508b] opacity-90 rounded-md py-2">
+                <img src="wind.png" alt="" class="w-10">
+                <div class="text-lg font-semibold">WINDSPEED</div>
+                <div class="text-lg font-semibold speed"></div>
+            </div>
+            <div class="wind h-[120px] w-[150px] flex flex-col items-center justify-between bg-[#0d508b] opacity-90 rounded-md py-2">
+                <img src="humidity.png" alt="" class="w-10">
+                <div class="text-lg font-semibold">HUMIDITY</div>
+                <div class="text-lg font-semibold humid"></div>
+            </div>
+            <div class="wind h-[120px] w-[150px] flex flex-col items-center justify-between bg-[#0d508b] opacity-90 rounded-md py-2">
+                <img src="cloud.png" alt="" class="w-10">
+                <div class="text-lg font-semibold">CLOUDS</div>
+                <div class="text-lg font-semibold cloud"></div>
+            </div>
+           
+        </div>
+
+    </div>
+
+    <div class="notFound inactive w-[10rem]"><img src="not-found.png" alt=""></div>
+
+    
+
+    </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
